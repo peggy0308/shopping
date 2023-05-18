@@ -1,0 +1,251 @@
+.shortcut {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+.shortcut .w {
+  display: flex;
+  justify-content: space-between;
+}
+.shortcut .w .shortcut-left ul li {
+  display: inline-block;
+}
+.shortcut .w .shortcut-left ul li a {
+  margin-right: 3px;
+}
+.shortcut .w .shortcut-right ul li {
+  display: inline-block;
+}
+.shortcut .w .shortcut-right ul li:nth-child(even) {
+  margin: 0 12px;
+  width: 1px;
+  height: 12px;
+  background-color: #7f7f7f;
+}
+.shortcut .w .shortcut-right ul li .arrow-icon::after {
+  content: "\e900";
+  font-family: "icomoon";
+  margin-left: 7px;
+}
+
+.header {
+  height: 105px;
+}
+.header .w {
+  position: relative;
+}
+.header .w .logo {
+  position: absolute;
+  top: 25px;
+  width: 171px;
+  height: 61px;
+}
+.header .w .logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  background: url(../images/logo.png) no-repeat;
+  font-size: 0;
+}
+.header .w .search {
+  display: flex;
+  width: 538px;
+  height: 36px;
+  position: absolute;
+  top: 25px;
+  left: 346px;
+}
+.header .w .search input[type=search] {
+  width: 455px;
+  height: 36px;
+  padding: 0 10PX;
+  color: #7f7f7f;
+  border: 2px solid #c81623;
+  border-right: none;
+}
+.header .w .search button[type=button] {
+  width: 83px;
+  height: 36px;
+  background-color: #c81623;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header .w .search button[type=button]:hover {
+  background-color: #B1191A;
+}
+.header .w .hotwords {
+  position: absolute;
+  top: 66px;
+  left: 358px;
+}
+.header .w .hotwords a {
+  margin-right: 15px;
+}
+.header .w .hotwords a:first-child {
+  color: #c81623;
+}
+.header .w .shopcar {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  width: 140px;
+  height: 35px;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+  text-align: center;
+  line-height: 35px;
+}
+.header .w .shopcar::before {
+  content: "\e93a";
+  font-family: "icomoon";
+  margin-right: 5px;
+  color: #c81623;
+}
+.header .w .shopcar::after {
+  content: "\e901";
+  font-family: "icomoon";
+  margin-left: 5px;
+}
+.header .w .shopcar .count {
+  position: absolute;
+  top: -7px;
+  left: 100px;
+  padding: 1px 5px;
+  background-color: #c81623;
+  color: white;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+  height: 47px;
+  border-bottom: 2px solid #B1191A;
+}
+.nav .w {
+  display: flex;
+}
+.nav .w .dropdown {
+  width: 210px;
+  height: 47px;
+  background-color: #B1191A;
+  color: white;
+}
+.nav .w .dropdown .dt {
+  font-size: 18px;
+  line-height: 47px;
+  text-align: center;
+}
+.nav .w .dropdown .dd {
+  position: relative;
+  width: 100%;
+  height: 465px;
+  padding-left: 1px;
+  background-color: #c81623;
+  line-height: 31px;
+}
+.nav .w .dropdown .dd ul li a {
+  display: block;
+  padding-left: 10px;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease-out;
+}
+.nav .w .dropdown .dd ul li a::after {
+  content: "\e901";
+  font-family: "icomoon";
+  position: absolute;
+  right: 10px;
+  color: white;
+}
+.nav .w .dropdown .dd ul li a:hover {
+  background-color: white;
+  color: #c81623;
+  padding-left: 18px;
+}
+.nav .w .dropdown .dd ul li a:hover::after {
+  content: "\e901";
+  font-family: "icomoon";
+  color: #c81623;
+}
+.nav .w .navitems {
+  margin-left: 30px;
+  line-height: 47px;
+  font-size: 18px;
+}
+.nav .w .navitems a {
+  padding: 0 20px;
+}
+
+.footer {
+  height: 415px;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}
+.footer .mod-service {
+  height: 100px;
+  border-bottom: 1px solid #c8c7c7;
+}
+.footer .mod-service ul {
+  display: flex;
+}
+.footer .mod-service ul li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100px;
+}
+.footer .mod-service ul li .footer-pic {
+  width: 50px;
+  height: 50px;
+  background: url(../images/icons.png) no-repeat;
+  margin: 0 5px 0 35px;
+}
+.footer .mod-service ul li .footer-icon1 {
+  background-position: -253px -2px;
+}
+.footer .mod-service ul li .footer-icon2 {
+  background-position: -254px -54px;
+}
+.footer .mod-service ul li .footer-icon3 {
+  background-position: -256px -106px;
+}
+.footer .mod-service ul li .footer-icon4 {
+  background-position: -258px -156px;
+}
+.footer .mod-service ul li .footer-icon5 {
+  background-position: -256px -209px;
+}
+.footer .mod-service ul li .service-txt h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer .mod-help {
+  display: flex;
+  height: 185px;
+  border-bottom: 1px solid #c8c7c7;
+  padding: 20px 0 0 50px;
+}
+.footer .mod-help dl {
+  width: 16.5%;
+}
+.footer .mod-help dl dt {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.footer .mod-help dl:last-child {
+  text-align: center;
+}
+.footer .mod-copyright {
+  text-align: center;
+}
+.footer .mod-copyright .links {
+  margin: 20px 0 10px 0;
+}
+.footer .mod-copyright .links a {
+  padding: 0 5px;
+}
+.footer .mod-copyright .copyright {
+  line-height: 20px;
+}/*# sourceMappingURL=common.css.map */

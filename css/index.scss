@@ -1,0 +1,256 @@
+@import "_scss.scss";
+
+// * {
+//     border: 1px solid gray;
+// }
+
+.main {
+    margin-top: 10px;
+
+    .w {
+        display: flex;
+        justify-content: flex-end;
+        height: 455px;
+
+        .focus {
+            width: 721px;
+            height: 455px;
+        }
+
+        .newflash {
+            width: 250px;
+            height: 455px;
+            margin-left: 9.5px;
+
+            .news {
+                height: 165px;
+                border: 1px solid $light-gray;
+
+                .nwes-hd {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 15px;
+                    line-height: 33px;
+
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        border-bottom: 1px dotted $light-gray;
+                    }
+
+                    a::after {
+                        content: '\e901';
+                        font-family: 'icomoon';
+                    }
+                }
+
+                .news-bd {
+                    padding: 5px 12px 0;
+
+                    ul {
+                        li {
+                            line-height: 24px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+
+            .lifeservice {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 209px;
+                    border: 0.5px solid $light-gray;
+                    border-top: none;
+
+                    li {
+                        position: relative;
+                        width: 25%;
+                        text-align: center;
+                        border: 0.5px solid $light-gray;
+
+                        span {
+                            position: absolute;
+                            right: 0;
+                            width: 12px;
+                            height: 15px;
+                            background: url(../images/jian.jpg) no-repeat;
+                        }
+
+                        .footer-pic {
+                            margin: 10px auto 5px;
+                            width: 30px;
+                            height: 30px;
+                            background: url(../images/icons.png) no-repeat;
+                        }
+
+                        .footer-pic-1 {
+                            background-position: -14.5px -14px;
+                        }
+                    }
+                }
+            }
+
+            .bargain {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+.recom {
+    margin-top: 10px;
+
+    .w {
+        display: flex;
+        height: 163px;
+
+        .recom-hd {
+            width: 210px;
+            background-color: $gray;
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        .recom-bd {
+
+            ul {
+                display: flex;
+                width: 990px;
+
+                li {
+                    position: relative;
+
+                    &:nth-child(-n+3)::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 10px;
+                        width: 1px;
+                        height: 145px;
+                        background-color: $light-gray;
+                    }
+
+                    img {
+                        width: 247.5px;
+                        height: 163px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.floor {
+    .w {
+        margin-top: 50px;
+
+        .box-hd {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $cis;
+
+            h3 {
+                color: $cis;
+                font-size: 18px;
+            }
+
+            .tab-list {
+                display: flex;
+
+                a {
+                    padding: 5px 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .box-bd {
+            border-bottom: 2px solid $light-gray;
+
+            .tab-content {
+                .tab-list-item {
+                    display: flex;
+
+                    .col-left {
+                        width: 380px;
+                        height: 452px;
+                    }
+
+                    .col-right {
+                        display: none;
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            li {
+                                width: 205px;
+                                height: 226px;
+                                padding-top: 10px;
+                                text-align: center;
+                                border: 0.5px solid #ededed;
+                                border-top: none;
+                                border-left: none;
+
+                                img {
+                                    width: 170px;
+                                    height: 170px;
+                                }
+
+                                h4 {
+                                    margin-top: 5px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Demo styles
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+}

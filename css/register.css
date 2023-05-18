@@ -1,0 +1,191 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  border-bottom: 2px solid #B1191A;
+}
+.header div:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0 15PX;
+  border-left: 1px solid #c81623;
+}
+.header div:last-child {
+  font-size: 16px;
+}
+.header .logo {
+  width: 171px;
+  height: 61px;
+}
+
+.registerarea {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.registerarea .reg-form {
+  width: 800px;
+}
+.registerarea ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.registerarea ul li label {
+  display: flex;
+  justify-content: end;
+  width: 16%;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.registerarea ul li input {
+  width: 60%;
+  height: 40px;
+  border: 1px solid #c8c7c7;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.registerarea ul li input:focus {
+  outline: 2px solid #dfdfdf;
+}
+.registerarea ul li .error {
+  margin-left: 15px;
+  font-size: 14px;
+  color: red;
+}
+.registerarea ul li .error::before {
+  content: "\e904";
+  font-family: "icomoon";
+  margin-right: 5px;
+}
+.registerarea ul li .success {
+  margin-left: 15px;
+  font-size: 14px;
+  color: green;
+}
+.registerarea ul li .success::before {
+  content: "\e903";
+  font-family: "icomoon";
+  margin-right: 5px;
+}
+.registerarea ul li .show {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.registerarea ul li .show input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+  margin: 0 5px 0 140px;
+}
+.registerarea ul li .agree {
+  font-size: 15px;
+}
+.registerarea ul li .agree div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.registerarea ul li .agree div input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+  margin: 0 5px 0 140px;
+}
+.registerarea ul li .agree div a {
+  color: #c81623;
+  margin: 0 3px;
+}
+.registerarea ul li:last-child {
+  justify-content: center;
+}
+.registerarea ul li:last-child input[type=submit] {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #c81623;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.registerarea ul li:last-child input[type=submit]:hover {
+  background-color: #B1191A;
+}
+
+.footer {
+  height: 415px;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}
+.footer .mod-service {
+  height: 100px;
+  border-bottom: 1px solid #c8c7c7;
+}
+.footer .mod-service ul {
+  display: flex;
+}
+.footer .mod-service ul li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100px;
+}
+.footer .mod-service ul li .footer-pic {
+  width: 50px;
+  height: 50px;
+  background: url(../images/icons.png) no-repeat;
+  margin: 0 5px 0 35px;
+}
+.footer .mod-service ul li .footer-icon1 {
+  background-position: -253px -2px;
+}
+.footer .mod-service ul li .footer-icon2 {
+  background-position: -254px -54px;
+}
+.footer .mod-service ul li .footer-icon3 {
+  background-position: -256px -106px;
+}
+.footer .mod-service ul li .footer-icon4 {
+  background-position: -258px -156px;
+}
+.footer .mod-service ul li .footer-icon5 {
+  background-position: -256px -209px;
+}
+.footer .mod-service ul li .service-txt h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer .mod-help {
+  display: flex;
+  height: 185px;
+  border-bottom: 1px solid #c8c7c7;
+  padding: 20px 0 0 50px;
+}
+.footer .mod-help dl {
+  width: 16.5%;
+}
+.footer .mod-help dl dt {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.footer .mod-help dl:last-child {
+  text-align: center;
+}
+.footer .mod-copyright {
+  text-align: center;
+}
+.footer .mod-copyright .links {
+  margin: 20px 0 10px 0;
+}
+.footer .mod-copyright .links a {
+  padding: 0 5px;
+}
+.footer .mod-copyright .copyright {
+  line-height: 20px;
+}/*# sourceMappingURL=register.css.map */

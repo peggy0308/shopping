@@ -1,0 +1,110 @@
+.sk {
+  position: absolute;
+  top: 40px;
+  left: 190px;
+  padding: 3px 10px;
+  border-left: 1px solid #c81623;
+}
+
+.nav .w {
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.nav .w .sk-list ul li {
+  display: inline-block;
+  margin: 15px;
+  font-weight: 700;
+}
+.nav .w .sk-content ul li {
+  display: inline-block;
+  margin: 15px;
+}
+.nav .w .sk-content ul li:last-child a::after {
+  content: "\e900";
+  font-family: "icomoon";
+}
+
+.sk-container .sk-hd {
+  margin-bottom: 20px;
+}
+.sk-container .sk-hd img {
+  width: 1200px;
+  height: 120px;
+}
+.sk-container .sk-bd ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sk-container .sk-bd ul li {
+  position: relative;
+  width: 290px;
+  height: 460px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  outline: 0.5px solid transparent;
+  transition: all 0.5s ease-out;
+}
+.sk-container .sk-bd ul li:hover {
+  outline: 0.5px solid #c81623;
+}
+.sk-container .sk-bd ul li a img {
+  width: 290px;
+  height: 290px;
+}
+.sk-container .sk-bd ul li .sk-item {
+  padding: 5px 10px;
+}
+.sk-container .sk-bd ul li .sk-item h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  box-sizing: border-box;
+}
+.sk-container .sk-bd ul li .sk-item .cis {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.sk-container .sk-bd ul li .sk-item .bar {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.sk-container .sk-bd ul li .sk-item .bar div {
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px;
+  width: 150px;
+  height: 13px;
+  border: 1.5px solid #c81623;
+  border-radius: 7px;
+}
+.sk-container .sk-bd ul li .sk-item .bar div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 13px;
+  background-color: #c81623;
+}
+.sk-container .sk-bd ul li .btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #c81623;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+}
+.sk-container .sk-bd ul li .btn:hover {
+  background-color: #B1191A;
+}/*# sourceMappingURL=list.css.map */
