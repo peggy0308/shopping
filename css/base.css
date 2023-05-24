@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?r8vul2");
-  src: url("../fonts/icomoon.eot?r8vul2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?r8vul2") format("truetype"), url("../fonts/icomoon.woff?r8vul2") format("woff"), url("../fonts/icomoon.svg?r8vul2#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?b59hkk");
+  src: url("../fonts/icomoon.eot?b59hkk#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?b59hkk") format("truetype"), url("../fonts/icomoon.woff?b59hkk") format("woff"), url("../fonts/icomoon.svg?b59hkk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -11,6 +11,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

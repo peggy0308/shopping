@@ -31,23 +31,30 @@
 .header {
   height: 105px;
 }
-.header .w {
-  position: relative;
+.header .w .search {
+  width: 100%;
+  height: 95px;
 }
-.header .w .logo {
+.header .w .search .search-m {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 95px;
+}
+.header .w .search .search-m .logo {
   position: absolute;
   top: 25px;
   width: 171px;
   height: 61px;
 }
-.header .w .logo a {
+.header .w .search .search-m .logo a {
   display: block;
   width: 171px;
   height: 61px;
   background: url(../images/logo.png) no-repeat;
   font-size: 0;
 }
-.header .w .search {
+.header .w .search .search-m .form {
   display: flex;
   width: 538px;
   height: 36px;
@@ -55,7 +62,7 @@
   top: 25px;
   left: 346px;
 }
-.header .w .search input[type=search] {
+.header .w .search .search-m .form input[type=search] {
   width: 455px;
   height: 36px;
   padding: 0 10PX;
@@ -63,7 +70,7 @@
   border: 2px solid #c81623;
   border-right: none;
 }
-.header .w .search button[type=button] {
+.header .w .search .search-m .form button[type=button] {
   width: 83px;
   height: 36px;
   background-color: #c81623;
@@ -71,21 +78,21 @@
   font-size: 16px;
   font-weight: 600;
 }
-.header .w .search button[type=button]:hover {
+.header .w .search .search-m .form button[type=button]:hover {
   background-color: #B1191A;
 }
-.header .w .hotwords {
+.header .w .search .search-m .hotwords {
   position: absolute;
   top: 66px;
   left: 358px;
 }
-.header .w .hotwords a {
+.header .w .search .search-m .hotwords a {
   margin-right: 15px;
 }
-.header .w .hotwords a:first-child {
+.header .w .search .search-m .hotwords a:first-child {
   color: #c81623;
 }
-.header .w .shopcar {
+.header .w .search .search-m .shopcar {
   position: absolute;
   top: 25px;
   right: 60px;
@@ -96,18 +103,18 @@
   text-align: center;
   line-height: 35px;
 }
-.header .w .shopcar::before {
+.header .w .search .search-m .shopcar::before {
   content: "\e93a";
   font-family: "icomoon";
   margin-right: 5px;
   color: #c81623;
 }
-.header .w .shopcar::after {
+.header .w .search .search-m .shopcar::after {
   content: "\e901";
   font-family: "icomoon";
   margin-left: 5px;
 }
-.header .w .shopcar .count {
+.header .w .search .search-m .shopcar .count {
   position: absolute;
   top: -7px;
   left: 100px;
@@ -117,6 +124,53 @@
   line-height: 14px;
   text-align: center;
   border-radius: 7px 7px 7px 0;
+}
+
+.search-fix {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  background-color: white;
+  border-bottom: 2px solid #B1191A;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  animation: searchTop 0.5s ease-in-out;
+}
+
+@keyframes searchTop {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 250px;
+  left: 50%;
+  margin-left: 608px;
+}
+.sidebar img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+.sidebar .top {
+  font-size: 14px;
+  line-height: 14px;
+}
+.sidebar .top::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  content: "\e902";
+  font-family: "icomoon";
+  font-size: 20px;
 }
 
 .nav {
